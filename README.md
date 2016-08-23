@@ -1,5 +1,5 @@
 # TypeScript workshop
-##### Authors: Kevin Van Houtte
+##### Author: Kevin Van Houtte
 
 This workshop will guide you through the core elementals of TypeScript.
 Each branch has a exercise that leads step by step till the final solution.
