@@ -1,16 +1,11 @@
-function publishItems(title:string,genre:string,description:string) : void {
 
-    let article: HTMLElement = document.createElement("article")
-    article.innerHTML =
-        "<h3>" + title + "</h3>" +
-        "<p>" + genre + "</p>" +
-        "<span>" + description + "</span>";
+let jsonParser = new JSONParser();
 
+jsonParser.getJSON("items.json", data => {
+    //activate when you finished exercise 3
+   /* let library:Library = Library.fromJSON(data);
 
-    document.getElementById("items").appendChild(article);
-
-}
-
-publishItems("Matrix","Thriller","Did you know, Neo is the one?");
-
-publishItems("Moby Dick","Drama","Is this fish for real?");
+    var itemContainer: HTMLElement = document.getElementById("items");
+    library.getAll().forEach(item => item.render(itemContainer));
+    */
+});

@@ -1,61 +1,24 @@
-# ex2 - Classes, Interfaces, Inheritance, Types & Access Modifiers
+# ex3 - Get Data from external sources
 
-Now that you had a warm up, we will be looking at the core concepts of TypeScript. 
+When working on a project you will interact with external sources you have to use for your application.
+A couple examples: REST API calls, via SOAP
 
-1. Run **npm install** and then compile using **tsc** 
-2. Start the "application", i.e. open the index.html file and see how it looks. Currently, two class-less item is added using strings
+In this exercise you will be getting data from a local json file called **items.json**
+To parse the json I will give you a helper class. 
 
-We are gonna build an OO architecture for a library of movies and books.
-First we need to build the according classes to work with.
-For every class you can create a new file to make it more readable for you, but it will require more script tags in html.
-Now build the following classes with their corresponding members and constructor:
+1. Create a new static method fromJSON for every item (Book and Movie)
+* Parameter: data of type any
+* returns item initialised with data from the parameter
 
-   #### Class: Author
-   | Field        | Type                             |
-   | ----------- |:---------------------------------| 
-   | value       | string variable                  |  
-   
-   #### interface: Rating
-   | Field        | Type                             |
-   | ----------- |:---------------------------------| 
-   | age         | number variable                  | 
-   | name        | string variable                  |  
-   
-   
-  #### Abstract Class: Item
-   | Field        | Type                             |
-   | ----------- |:---------------------------------| 
-   | title       | string variable                  | 
-   | genre       | string variable                  |  
-   | description | string variable                  |   
-   | render      | abstract void method, accepts HTMLElement |
-   
-   #### Class: Movie, Extends: Item, implements: Rating
-   | Field        | Type                             |
-   | ----------- |:---------------------------------| 
-   | title       | string variable                  | 
-   | genre       | string variable                  |  
-   | description | string variable                  |   
-   | render      | void method, accepts HTMLElement parameter |
-   
-   #### Class: Book, Extends: Item
-   | Field        | Type                             |
-   | ----------- |:---------------------------------| 
-   | title       | string variable                  | 
-   | author      | Author variable                  |  
-   | genre       | string variable                  |  
-   | description | string variable                  |   
-   | render      | void method, accepts HTMLElement parameter |
-   
-   
-   
-Finally we will make a class named Library to output our items(publishItems) to the screen 
-* Make a list of items (don't forget to initialise it before use)
-* Constructor to fill the list of items (make some instances of various movies and books)
-* Make a method to output this list in to the HTML. 
+2. Go to the Library class and modify
+* Clean out the constructor
+* Remove the publishItems method
+* Remove the items array
+* We will need 2 arrays now, one for Books and one for Movies and pass it through the constructor
+* Initialise the 2 arrays in the static method with the json resource
+* Make a new method to return all items
 
-Now open your app.ts file, initialise the Library class and call the method.
-Run index.html and look at the result!
+3. Activate the code in app.ts and run your index.html to see result!
 
-
-
+# JS Help
+* For getting the resource out of the json: use the map option and the two static methods from Movie and Book
