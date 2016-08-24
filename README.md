@@ -13,7 +13,7 @@ Some software is needed to perform this lab.
 2. **NodeJS**. NPM (package manager) is needed to get dependencies (compare with Maven or Gradle). Can be downloaded at https://nodejs.org/en/ . Avoid installing using brew/macports etc. as it can lead to permission problems. If NPM is installed correctly, you should be able to run **npm --version** in your terminal/command prompt
 
 Let's go to our first exercise.
-To go the next exercise 
+To go to the next exercise 
 ```sh
 git checkout ex1-HelloWorld
 ```
