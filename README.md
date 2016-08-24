@@ -1,4 +1,4 @@
-# ex2 - Classes, Interfaces, Inheritance, Types & Access Modifiers
+# ex2 - Classes, Interfaces, Inheritance and Types
 
 Now that you had a warm up, we will be looking at the core concepts of TypeScript. 
 
@@ -9,6 +9,7 @@ We are gonna build an OO architecture for a library of movies and books.
 First we need to build the according classes to work with.
 For every class you can create a new file to make it more readable for you, but it will require more script tags in html.
 Now build the following classes with their corresponding members/methods and constructor:
+
 #### Class: Author
 | Field        | Type                             |
 | ----------- |:---------------------------------| 
@@ -48,7 +49,12 @@ Now build the following classes with their corresponding members/methods and con
 | render      | void method, accepts HTMLElement parameter |
    
    
-   
+#### Render method
+* Create an article element
+* Fill it with the data from your class 
+* Add it to the html.
+
+#### Class Library
 Finally we will make a class named Library to output our items(publishItems) to the screen 
 * Make a list of items (don't forget to initialise it before use)
 * Constructor to fill the list of items (make some instances of various movies and books)
