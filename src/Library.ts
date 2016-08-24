@@ -16,7 +16,7 @@ class Library {
 
     publishItems():void{
 
-        var articleContainer: HTMLElement = document.getElementById("items");
-        this.items.forEach(article => article.render(articleContainer));
+        var itemContainer: HTMLElement = document.getElementById("items");
+        this.items.forEach(item => item.render(itemContainer));
     }
 }

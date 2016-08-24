@@ -6,16 +6,17 @@ A couple examples: REST API calls, via SOAP
 In this exercise you will be getting data from a local json file called **items.json**
 To parse the json I will give you a helper class. 
 
-1. Create a new static method fromJSON for every item (Book and Movie)
-* Parameter: data of type any
-* returns item initialised with data from the parameter
+#### Book.ts & Movie.ts
+* Create a new static method fromJSON with 1 parameter of type any. 
+* Returns Book or Movie object initialised with the input
 
-2. Go to the Library class and modify
+#### Library.ts
 * Clean out the constructor
 * Remove the publishItems method
-* We will need 2 arrays now, one for Books and one for Movies and pass it through the constructor
-* Initialise the 2 arrays in the static method with the json resource
-* Make a new method to return all items
+* Create an array for Movie and Book 
+* Give the constructor these two arrays.
+* Implement the static method fromJSON: initialise the two arrays with the data you get from the json
+* Make a new method that concatenates and returns all items 
 
 3. Activate the code in app.ts and run your index.html to see result!
 
