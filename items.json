@@ -3,7 +3,9 @@
     {
       "title": "Matrix",
       "genre": "Comedy",
-      "description": "Srsly comedy?"
+      "description": "Srsly comedy?",
+      "age": 16,
+      "name":"PG"
     }
   ],
 

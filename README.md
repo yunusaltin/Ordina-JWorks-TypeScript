@@ -1,24 +1,18 @@
-# ex3 - Get Data from external sources
+# ex4 - Create Data
 
-When working on a project you will interact with external sources you have to use for your application.
-A couple examples: REST API calls, via SOAP
+When we can get data, sometimes we want to create our own books and movies. 
+In this exercise we will implement a creation for book and movie and add that to a local list
 
-In this exercise you will be getting data from a local json file called **items.json**
-To parse the json I will give you a helper class. 
+#### index.html
+* Create a button named "Get me some movies" with an onClick event to the method addMovie()
+* Create a button named "Get me some books' with an onClick event to the method addBook()
 
-1. Create a new static method fromJSON for every item (Book and Movie)
-* Parameter: data of type any
-* returns item initialised with data from the parameter
+#### Library.ts
+* Create a new method named addMovie() 
+* Implement by adding a default movie to the Array and looping the render function.
+* Repeat the previous 2 steps for Book
 
-2. Go to the Library class and modify
-* Clean out the constructor
-* Remove the publishItems method
-* Remove the items array
-* We will need 2 arrays now, one for Books and one for Movies and pass it through the constructor
-* Initialise the 2 arrays in the static method with the json resource
-* Make a new method to return all items
+#### app.ts
+Initialise a new instance of Library and assign getJSON to it
 
-3. Activate the code in app.ts and run your index.html to see result!
-
-# JS Help
-* For getting the resource out of the json: use the map option and the two static methods from Movie and Book
+Run your index and check the results by pressing the buttons!
