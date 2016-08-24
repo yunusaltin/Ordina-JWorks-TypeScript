@@ -17,18 +17,6 @@ When NodeJS is installed you can use NPM to install TypeScript.
 ```sh
 npm install typescript -g
 ```
-
-Create a file **greeter.ts** and add 
-```javascript
-var name: string = "John Doe";
-```
-
-and then run 
-```sh
-tsc greeter.ts
-```
-
-It now transpiles your ts file to a js file. This is because the browser only recognizes JavaScript. 
 Let's go to our first exercise.
 To go the next exercise 
 ```sh
