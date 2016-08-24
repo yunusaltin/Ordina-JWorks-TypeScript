@@ -1,16 +1,16 @@
-// Typesafe function that only allows string values
-function printHelloWorld(person: string, element: string) {
-    document.getElementById(element).innerHTML = "Hello " + person;
+function publishItems(title:string,genre:string,description:string) : void {
+
+    let article: HTMLElement = document.createElement("article")
+    article.innerHTML =
+        "<h3>" + title + "</h3>" +
+        "<p>" + genre + "</p>" +
+        "<span>" + description + "</span>";
+
+
+    document.getElementById("items").appendChild(article);
+
 }
 
-// Create a user object of type string
-var user: string = "Daniel";
+publishItems("Matrix","Thriller","Did you know, Neo is the one?");
 
-// Selector for find HTML element to replace text in.
-var element: string = "welcome-text";
-
-// Bonus variable for learning
-var age: number = 12; 
-
-// Run typesafe function that replaces HTML with input.
-printHelloWorld(user, element);
+publishItems("Moby Dick","Drama","Is this fish for real?");
