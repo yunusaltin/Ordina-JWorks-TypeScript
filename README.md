@@ -13,7 +13,6 @@ To parse the json I will give you a helper class.
 2. Go to the Library class and modify
 * Clean out the constructor
 * Remove the publishItems method
-* Remove the items array
 * We will need 2 arrays now, one for Books and one for Movies and pass it through the constructor
 * Initialise the 2 arrays in the static method with the json resource
 * Make a new method to return all items
