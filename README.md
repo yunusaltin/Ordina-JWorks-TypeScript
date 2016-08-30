@@ -2,8 +2,8 @@
 
 Now that you had a warm up, we will be looking at the core concepts of TypeScript. 
 
-1. Run **npm install** and then compile using **tsc** 
-2. Start the "application", i.e. open the index.html file and see how it looks. Currently, two class-less item is added using strings
+1. Compile using **tsc**  or autocompile.
+2. Start the "application", i.e. open the index.html file and see how it looks. Currently, two class-less item is added using strings.
 
 We are gonna build an OO architecture for a library of movies and books.
 First we need to build the according classes to work with.
@@ -13,7 +13,7 @@ Now build the following classes with their corresponding members/methods and con
 #### Class: Author
 | Field        | Type                             |
 | ----------- |:---------------------------------| 
-| value       | string variable                  |  
+| name       | string variable                  |  
    
    
 #### interface: Rating
@@ -50,18 +50,20 @@ Now build the following classes with their corresponding members/methods and con
    
    
 #### Render method
-* Create an article element
-* Fill it with the data from your class 
-* Add it to the html.
+* Create an article html element.
+* Fill it with the data from your class. 
+* Use the HTMLElement in the parameter to append the article.
 
 #### Class Library
-Finally we will make a class named Library to output our items(publishItems) to the screen 
-* Make a list of items (don't forget to initialise it before use)
-* Constructor to fill the list of items (make some instances of various movies and books)
+Finally we will make a class named Library to output our items to the screen. 
+* Make a list of items (don't forget to initialise it before use).
+* Constructor to fill the list of items (make some instances of various movies and books).
 * Make a method to output this list in to the HTML. 
 
-Now open your app.ts file, initialise the Library class and call the method.
-Run index.html and look at the result!
+#### app.ts
+* Remove everything.
+* Make an instance of the Library class and call the method.
+* Run index.html and look at the result!
 
 
 
