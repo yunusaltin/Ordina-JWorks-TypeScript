@@ -8,7 +8,7 @@ class Movie extends Item implements Rating{
     name:string;
 
     constructor(title:string,genre:string,description:string,age:number,name:string){
-        super(title,genre,description)
+        super(title,genre,description);
         this.age = age;
         this.name = name;
     }
