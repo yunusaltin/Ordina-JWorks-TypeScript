@@ -4,13 +4,13 @@ function printHelloWorld(person: string, element: string) {
 }
 
 // Create a user object of type string
-var user: string = "Daniel";
+let user: string = "Daniel";
 
 // Selector for find HTML element to replace text in.
-var element: string = "welcome-text";
+let element: string = "welcome-text";
 
 // Bonus variable for learning
-var age: number = 12;
+let age: number = 12;
 
 // Run typesafe function that replaces HTML with input.
 printHelloWorld(user, element);
