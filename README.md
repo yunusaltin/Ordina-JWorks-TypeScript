@@ -1,8 +1,7 @@
 # Exercise 1: Hello World
 
 ### Setup
-This exercise is to setup the environment and put something on the screen. 
-The main goal of this exercise is to get "Hello World" on the screen.
+The main goal of this exercise is to get "Hello World" on the screen and set up the environment.
 First we need setup our compilation from TS to JS for the browsers sake. 
 Execute following command to install TypeScript.
 
