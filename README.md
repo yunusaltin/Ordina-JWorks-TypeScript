@@ -1,18 +1,28 @@
-# ex4 - Create Data
+# ex5 - Extra exercise: School Plan
+Create a roster for our school with teachers and students.
+Be sure to use some logging in the process. 
 
-When we can get data, sometimes we want to create our own books and movies. 
-In this exercise we will implement a creation for book and movie and add that to a local list
+The students have a set of courses they follow.
+For each course, the students get grades.
 
-#### index.html
-* Create a button named "Get me some movies" with an onClick event to the method addMovie()
-* Create a button named "Get me some books' with an onClick event to the method addBook()
+The teachers has a set of students.
+Both have a similar model but differentiate.
+* Create me both a Student and Teacher class and apply the OCP pattern to it.
 
-#### Library.ts
-* Create a new method named addMovie() 
-* Implement by adding a default movie to the Array and looping the render function.
-* Repeat the previous 2 steps for Book
+# The Teachers Role
+* The teacher can lookup all students in his class (HTML & TS)
+* The teacher can add a new student (HTML & TS)
+* The teacher can remove a student (HTML & TS)
+* The teacher can grade a student of his class only on his own course (HTML & TS)
 
-#### app.ts
-Initialise a new instance of Library and assign getJSON to it
 
-Run your index and check the results by pressing the buttons!
+# Application
+* Create a drop down list of teachers you can choose from. (HTML & TS)
+* Once chosen, you are logged in as that teacher. (HTML & TS)
+* When logged in, you can see all your students (HTML & TS)
+* With the provided implementation of the teachers role, you can create a management tool for the students.
+
+
+# Bonus exercises
+* When I press a button, I want to see a sorted list of the logged in teachers students.
+* When I press a button, I want to see who has the highest grades of my course
