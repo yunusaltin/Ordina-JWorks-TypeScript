@@ -1,5 +1,5 @@
-# ex5 - Extra exercise: School Plan
-Create a roster for our school with teachers and students.
+# ex5 - Extra exercise: School Tool
+Create a management tool for the teachers.
 Be sure to use some logging in the process. 
 
 The students have a set of courses they follow.
