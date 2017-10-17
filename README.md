@@ -3,20 +3,35 @@ Create a management tool for the teachers.
 Be sure to use some logging in the process. 
 
 The students have a set of courses they follow.
-For each course, the students get grades.
+For each course, the students gets grades.
 
 The teachers has a set of students.
 Both have a similar model but differentiate.
 * Create me both a Student and Teacher class and apply the OCP pattern to it.
 
+# The Course Class
+* Create a course class
+* Name it
+* Link a teacher to it
+* Make a service class to apply CRUD operations on Course
+
+# The Student Class 
+* Link to a set of courses
+* Make a service class to apply CRUD operations on Student
+
+# Bonus: Make the service generic
+
 # The Teachers Role
 * The teacher can lookup all students in his class (HTML & TS)
 * The teacher can add a new student (HTML & TS)
+    * When a new student is added, be sure the student has added the course to his list
 * The teacher can remove a student (HTML & TS)
+    * When a student is removed, be sure the student has removed the course to his list
 * The teacher can grade a student of his class only on his own course (HTML & TS)
 
 
 # Application
+* Create dummy data at start for teachers and students
 * Create a drop down list of teachers you can choose from. (HTML & TS)
 * Once chosen, you are logged in as that teacher. (HTML & TS)
 * When logged in, you can see all your students (HTML & TS)
